@@ -34,7 +34,7 @@ class OpauthMultiple extends \MapasCulturais\AuthProvider{
 
         // add actions to auth controller
         $app->hook('GET(auth.index)', function () use($app){
-            $this->render('multiple-local');
+            $this->render('multiple');
         });
 
         $providers = implode('|', array_keys($config['strategies']));
